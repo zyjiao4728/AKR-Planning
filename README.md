@@ -72,6 +72,3 @@ The demo shows how a robot tries to pick an object with a tool and operate an ar
 source <path-to-src>/devel/setup.bash
 roslaunch vkc_example household_env.launch
 ```
-![image](./src/pictures/vkc_pick_stick.gif)   ![image](./src/pictures/vkc_move_ball_with_stick.gif)    ![image](./src/pictures/vkc_open_cabinet_door.gif)
-
-![image](./src/pictures/vkc_big_task_move_cup_with_plate.gif)    ![image](./src/pictures/vkc_big_task_move_all_cups_with_plate_into_cabinet.gif)    ![image](./src/pictures/vkc_big_task_move_chair_away_from_path_way.gif)
