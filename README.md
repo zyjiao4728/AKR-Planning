@@ -1,4 +1,4 @@
-# Planning-on-VKC
+# AKR-Planning
 
 ![ros_vesrion](https://img.shields.io/badge/ROS-Noetic-blue) ![sys-vesrion](https://img.shields.io/badge/Ubuntu-20.04-blue) 
 
@@ -42,32 +42,23 @@ catkin build
 
 where `<github-package-url>` is the GitHub download URL of our package.
 
-You can build a [Docker](https://docs.docker.com/engine/install/) image for VKC and run the example of *using a stick to pick a ball* by the following commands
+### 1.3 Docker installation
+
+We recommend using [Docker](https://docs.docker.com/engine/install/) image for AKR and run the example by the following commands
 ```bash
-cd Planning-on-VKC
+cd AKR-Planning
 docker build -t vkc:test .
 sh ./x11-docker-with-ros.sh
 source ./devel/setup.bash
 roslaunch vkc_example household_env.launch
 ```
-
 *Note: Use `--dry-run` to list the packages which will be built.*
-
 
 
 ## 2. Run Examples
 
-### 2.1 Examples come with the Tesseract package:
-
-``` bash
-source <path-to-src>/devel/setup.bash
-roslaunch tesseract_ros_example <example-name>.launch
-```
-
-### 2.2 Examples come with the vkc package:
-
-#### 2.2.1 Example of using a stick to pick a ball:
-The demo shows how a robot tries to pick an object with a tool and operate an articulated object such as opening a cabinet door.
+### 2.1 Examples come with the vkc package:
+The demo shows how the experiment in Section. VI-D:
 ``` bash
 source <path-to-src>/devel/setup.bash
 roslaunch vkc_example household_env.launch
