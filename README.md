@@ -33,8 +33,8 @@ Cloning the repositories(especially submodules) may take up to hours, depending 
 
 ```bash
 cd projects
-git clone -b release git@github.com:zyjiao4728/Planning-on-VKC.git --recurse-submodules
-cd Planning-on-VKC
+git clone -b release git@github.com:zyjiao4728/AKR-Planning.git --recurse-submodules
+cd AKR-Planning
 git submodule update --init --recursive --progress
 rosdep install --from-paths src --ignore-src -r -y
 catkin build
@@ -57,7 +57,7 @@ roslaunch vkc_example household_env.launch
 
 ## 2. Run Examples
 
-### 2.1 Examples come with the vkc package:
+### 2.1 Examples come with the AKR-Planning package:
 The demo shows how the experiment in Section. VI-D:
 ``` bash
 source <path-to-src>/devel/setup.bash
